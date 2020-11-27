@@ -1,4 +1,4 @@
-# reflection_generation
+# reflection_generation_demo
  This repository is a demo of the Motivational Interviewing reflection generation using few-shot learning (currently using GPT2 and few-shot learning). 
 
 ## Installation Instructions
