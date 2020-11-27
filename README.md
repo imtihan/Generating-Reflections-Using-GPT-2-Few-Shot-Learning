@@ -6,7 +6,7 @@ To get started, please install the latest version of python. I recommend using t
 You can download anaconda here: https://www.anaconda.com/products/individual
 
 Python package requirements are listed in requirements.txt
-You can install the packages dierctly by running the following in a terminal: 
+You can install the packages directly by running the following in a terminal: 
 
 `pip install -r requirements.txt` 
 
