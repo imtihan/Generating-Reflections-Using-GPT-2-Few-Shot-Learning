@@ -5,6 +5,7 @@
 To get started, please install the latest version of python. I recommend using the anaconda package for ease-of-use. 
 You can download anaconda here: https://www.anaconda.com/products/individual
 
+Before running the code, we need to install some packages.
 Python package requirements are listed in requirements.txt
 You can install the packages directly by running the following in a terminal: 
 
