@@ -17,7 +17,9 @@ Following that we install pytorch with the following (copy paste into the termin
 ## How to run the code
 Once the above packages are installed, we can start producing reflections by running the following in the terminal:
 
-The commandline arguments are as follows: 
+`python generate_reflections.py -m gpt2-medium -maxp 3 -minp 3 -q ./primers/filtered_primers.csv -p ./samples/filtered_data_reflections.csv -r example_results`
+
+Each argument is preceded by the hyphen `-` character. The meaning of each argument is listed below:
 
 `-p <filepath>` path to the file with the 'prompt' and 'response' as rows in a .csv file. These are the samples that will have the reflections generated on. Default is examples.csv
 
@@ -32,9 +34,6 @@ Default is examples.csv
 
 `-m <model name>` declare the model from huggingface to be used for few shot learning, you can use any version of gpt that can be searched here, using the name the website describes: https://huggingface.co/models. Default is gpt2-xl
 
-
-Here is an example of the commandline argument: 
-`python generate_reflections.py -m gpt2-medium -maxp 3 -minp 3 -q ./primers/filtered_primers.csv -p ./samples/filtered_data_reflections.csv -r example_results`
 
 #### NOTE: The first time you run the code, the script will download the relevant models so the startup time will be much slower than subsequent runs of the code. Please ensure you have a stable internet connection as the models are a few gigabytes in size for the largest one.
 
