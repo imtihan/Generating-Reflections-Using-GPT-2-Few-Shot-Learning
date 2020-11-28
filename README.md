@@ -1,5 +1,5 @@
 # reflection_generation_demo
- This repository is a demo of the Motivational Interviewing reflection generation using few-shot learning (currently using GPT2 and few-shot learning). 
+ This repository is a demo of the Motivational Interviewing reflection generation using few-shot learning (code is tested for use with Huggingface library's pretrained GPT2 model). 
 
 ## Installation Instructions
 To get started, please install the latest version of python. I recommend using the anaconda package for ease-of-use. 
