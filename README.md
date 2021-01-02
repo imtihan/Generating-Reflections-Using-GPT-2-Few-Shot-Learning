@@ -38,7 +38,7 @@ Default is examples.csv
 #### NOTE: The first time you run the code, the script will download the relevant models so the startup time will be much slower than subsequent runs of the code. Please ensure you have a stable internet connection as the models are a few gigabytes in size for the largest one.
 
 ## Dataset 
-The dataset (both the primers and samples) are examples taken from open-access Motivational Interviewing example transcripts. We extracted turns of conversations that included reflections and used those as primers. The samples are random snippets of example conversations between a therapist and a client. This dataset is only used to demonstrate how our script works and does not reflect the final performance of our script.
+The dataset (both the primers and samples) are examples taken from open-access Motivational Interviewing example transcripts. We extracted turns of conversations that included reflections and used those as primers. The samples are random snippets of example conversations between a therapist and a client. This dataset is only used to demonstrate how our script works and does not reflect the final performance of our reflection generation process.
 
 ## Issues you may have 
 Depending on how much RAM you and your processor  the default model may not run or be very slow. The minimum amount of RAM recommended to run the gpt2-xl model is 16 gigabytes. If you have less, please try the gpt2-large or gpt2-medium models. The smaller models also run faster so if the inference time is too long, smaller models may help. 
