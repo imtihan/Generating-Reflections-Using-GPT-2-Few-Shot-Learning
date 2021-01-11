@@ -176,5 +176,5 @@ if __name__ == "__main__":
     generate_reflections(args.p, args.q, args.m, args.maxp, args.r, args.minp)
 
     #=========example commandline inputs ==================
-    #python generate_reflections.py -m gpt2-medium -maxp 3 -minp 3 -q ./primers/filtered_primers.csv -p ./samples/filtered_data_reflections.csv -r example_results
+    #python generate_reflections.py -m gpt2-xl -maxp 3 -minp 3 -q ./primers/filtered_primers.csv -p ./samples/filtered_data_reflections.csv -r example_results
     #python generate_reflections.py -m gpt2  -n 12 -p imtihan-reflections.tsv filtered_data_reflections.csv -r imtihan-results-more-shots.csv -r example_results.csv
