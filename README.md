@@ -1,6 +1,33 @@
 # reflection_generation_demo
  This repository is a demo of the Motivational Interviewing reflection generation using few-shot learning (code is tested for use with Huggingface library's pretrained GPT2 model). 
 
+Few-shot learning refers to giving a pre-trained text-generation model (like GPT2) a few complete examples of the text generation task that we are trying to complete, and then providing an incomplete final example, omitting the part of the text that we want the text-generation model to produce. All of the examples are part of the input string that we provide to the model, with the final, incomplete example being the final example in that string. 
+
+For our use case, each example consists of a prompt, response, and reflection. We format the input string so that each example is represented as follows:
+`Prompt: [an example prompt] Response: [an example response] Reflection: [an example reflection]`.
+
+We separate multiple examples with the newline character `\n`. 
+Then, the final example contains a prompt, response, but the reflection is kept empty after the colon as follows:
+`Prompt: [an example prompt] Response: [an example response] Reflection:` 
+
+So, the final input to our text-generation model (GPT2) looks something like this: 
+
+```
+Prompt: [an example prompt] Response: [an example response] Reflection: [an example reflection] \n  
+
+Prompt: [an example prompt] Response: [an example response] Reflection: [an example reflection] \n 
+
+Prompt: [an example prompt] Response: [an example response] Reflection: [an example reflection] \n 
+
+... 
+
+Prompt: [an example prompt] Response: [an example response] Reflection:
+```
+Thus, the model attempts to replicate the style of the examples to fill in the blank portion in the final example. The number of examples as part of the input determines the number of 'shots', which we are referring to as the number of priming examples or primers. 
+
+Note: This method is not training the model, so the model has no memory going from one prediction to the next using this method. You must use a pre-trained model for this task, the type and amount of data used in model pre-training will have an impact on the output as well, so we chose to use models pretrained on billions of words using the Huggingface library. Few-shot learning allows us to produce text in a specific style when we have a limited amount of labeled text data for the task. 
+
+
 ## Installation Instructions
 To get started, please install the latest version of python. I recommend using the anaconda package for ease-of-use. 
 You can download anaconda here: https://www.anaconda.com/products/individual
