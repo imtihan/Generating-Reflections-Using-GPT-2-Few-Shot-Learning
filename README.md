@@ -1,4 +1,4 @@
-# reflection_generation_demo
+# Generating-Reflections-Using-GPT-2-Few-Shot-Learning
  This repository is a demo of the Motivational Interviewing reflection generation using few-shot learning (code is tested for use with Huggingface library's pretrained GPT2 model). 
 
 Few-shot learning refers to giving a pre-trained text-generation model (like GPT2) a few complete examples of the text generation task that we are trying to complete, and then providing an incomplete final example, omitting the part of the text that we want the text-generation model to produce. All of the examples are part of the input string that we provide to the model, with the final, incomplete example being the final example in that string. 
